@@ -1,11 +1,13 @@
 body {
     background-color: #94c5ac;
+    border: 2px solid powderblue;
 }
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 200%;
+    padding-top: 15%;
+    padding-left: 5%;
 }
 p {
-    border: 2px solid powderblue;
-    padding: 15%;
+    font-family: 'Courier New', Courier, monospace;
 }
