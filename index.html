@@ -1,189 +1,163 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
-<head>
-
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Typed.js-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!--boostrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
     <!--My stylesheet-->
     <link rel="stylesheet" href="styles/styles.css">
     <!--My favicon-->
     <link rel="icon" type="image/x-icon" href="files/icon.ico">
     <title>Karlien's Portfolio</title>
+  </head>
 
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Navbar">
-    <div class="container-fluid">
 
-      <a class="navbar-brand" href="index.html">
-        <img src="files/icon_nav.png" alt="Mouse logo" width="32" height="=32" class="me-2">
-        Karlien Brink
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Navbar">
+      <div class="container-fluid">
 
-      <div class="collapse navbar-collapse" id="navbarsExample05">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="html/resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="html/projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="html/contact.html">Contact</a>
-          </li>
-        </ul>
+        <a class="navbar-brand" href="index.html">
+          <img src="files/icon_nav.png" alt="Mouse logo" width="32" height="=32" class="me-2">
+          Karlien Brink
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-<div class="col-lg-12 mx-auto p-3 py-md-5">
+    </nav>
+    
 
-  <main>
+    <main>
 
-    <!--First section: Role, name, photo-->
-    <div class="container mt-4" id="top">
-    <div class="row align-items-center">
-        <div class="col-md-4">
-          <img src="files/Karlien_head.jpeg" 
-          class="img-fluid rounded"   
-          style="width: 300px;height: 400px";
-          alt="A photo of a woman">
+      <!--First section: Role, name, photo-->
+      <div class="container-lg" id="top">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="files/Karlien_head.jpeg" 
+            class="resizable-image"   
+            style="width: 300px;";
+            alt="A photo of a woman">
+          </div>
+
+          <div class="col-md-8">
+              <h1>Karlien Brink</h1>
+              <p>
+                <!-- Animate the marked part to rotate through roles (game dev,  software dev, artist)-->
+                <h2>I am a <mark><i><span id= "typed" class="typed-text"></span></i></mark></h2>
+              </p>
+              <script>
+                new Typed("#typed", {
+                  strings: [
+                    "Web developer",
+                    "Software developer",
+                    "Game developer",
+                    "Artist"
+                  ],
+                  typeSpeed: 60,
+                  backSpeed: 40,
+                  backDelay: 1500,
+                  loop:true
+                })
+              </script>
+          </div>
+          
         </div>
 
-        <div class="col-md-8">
-            <h1>Karlien Brink</h1>
-            <p>
-              <!-- Animate the marked part to rotate through roles (game dev,  software dev, artist)-->
-              <h2>I am a <mark><i><span id= "typed" class="typed-text"></span></i></mark></h2>
-            </p>
-            <script>
-              new Typed("#typed", {
-                strings: [
-                  "Web developer",
-                  "Software developer",
-                  "Game developer",
-                  "Artist"
-                ],
-                typeSpeed: 60,
-                backSpeed: 40,
-                backDelay: 1500,
-                loop:true
-              })
-            </script>
+
+        <hr>
+        
+        <div class="container-md">
+          <!-- About/skills: Short overview of technologies + intro paragraph-->
+          <h2>About me</h2>
+          <p>Hi,I'm Karlien.<br> 
+            I am a final year BSc Information Technology student at North West University with hands on experience in software development, web development
+            data analytics and game development. I am familiar with Agile and DevOps practices, Git version control and building practical applications
+            from the ground up. <br>
+
+            I have strong problem solving and communication skills developed through both academic projects and part-time tutoring.<br>
+
+            I am seeking a role where I can contribute to data-driven and software solutions while continuing to grow my technical expertise.
+      
+          </p>
         </div>
-    </div>
-</div>
+        <hr>
+        <div class="container-lg">
+          <div class="row align-items-center">
+          
+            <div class="col-lg-4 text-center">
+              <!-- CV section: Link to CV page-->
+              <h3>Curriculum vitae</h3>
+              <p>Are you hiring? Find my CV here!
+              </p>
+              <button type="button"  class="btn btn-primary" onclick="document.location='html/resume.html'">Resume</button>
+            </div>
+
+
+            <div class="col-lg-4 text-center">
+
+              <!--Project section, short intro that leads to projects  page with a button-->
+              <h3>Projects</h3>
+              <p>
+                  I have worked on  a wide variety of projects, 
+                  including web applications, small games, windows accounting applications and 
+                  this very website portfolio. Feel free to check them out here.
+              </p>
+              <button type="button"  class="btn btn-primary" onclick="document.location='html/projects.html'">Projects</button>
+            </div>
+
+            <div class="col-lg-4 text-center">
+              <!-- Contact section: Link to Contact page-->
+              <h3>Contact me</h3>
+              <p>Do you need more information? Find my contact information and socials here!
+              </p>
+              <button type="button"  class="btn btn-primary" onclick="document.location='html/contact.html'">Contact</button>
+            </div>
+          
+          </div>
+        </div>
+
+        <hr>
+        <a href="#top">Back to top</a>
+        <!-- Remember to make image resize with viewport-->
+        <!-- Could use a picture tag to use different images for different viewports-->
 
         <hr>
     
-    <!-- About/skills: Short overview of technologies + intro paragraph-->
-    <h2>About me</h2>
-    <p>Hi,I'm Karlien.<br> 
-        I am a final year BSc Information Technology student at North West University with hands on experience in software development, web development
-        data analytics and game development. I am familiar with Agile and DevOps practices, Git version control and building practical applications
-        from the ground up. <br>
-
-        I have strong problem solving and communication skills developed through both academic projects and part-time tutoring.<br>
-
-        I am seeking a role where I can contribute to data-driven and software solutions while continuing to grow my technical expertise.
-   
-    </p>
-    <p>
-        <h3>Languages</h3>
-        I am fluent  in the following languages:
-        <ul>
-            <li>Afrikaans</li>
-            <li>English</li>
-        </ul>
-    </p>
-    <p>
-        <h3>Skills & technologies</h3>
-        I am proficient in the following technologies:
-        <h4>Software development and data science</h4>
-        <ul>
-            <li>Python (Flask, NumPy, Pandas)</li>
-            <li>Java</li>
-            <li>C++/C</li>
-            <li>C# (Unity, ASP .Net, .Net)</li>
-            <li>SQL (MySQL,  SQL Server)</li>
-            <li>HTML, CSS, Javascript</li>
-        </ul>
-        <h4>Creative software</h4>
-        <ul>
-            <li>Blender (3D modelling, animation)</li>
-            <li>Krita (Digital painting)</li>
-            <li>Aseprite (Pixel Art)</li>
-            <li>Adobe Photoshop, Lightroom, AfterEffects</li>
-            <li>DaVinci Resolve (Video editing)</li>
-        </ul>
-
-    </p>
-    <hr>
-    <!-- CV section: Link to CV page-->
-    <h3>Curriculum vitae</h3>
-    <p>Are you hiring? Find my CV here!
-    </p>
-    <button onclick="document.location='html/resume.html'">Resume</button>
-    <hr>
-    <!--Project section, short intro that leads to projects  page with a button-->
-    <h3>Projects</h3>
-    <p>
-        I have worked on  a wide variety of projects, 
-        including web applications, small games, windows accounting applications and 
-        this very website portfolio. Feel free to check them out here.
-
-    </p>
-    <button onclick="document.location='html/projects.html'">Projects</button>
-    <hr>
-    <!-- Contact section: Link to Contact page-->
-    <h3>Contact me</h3>
-    <p>Do you need more information? Find my contact information and socials here!
-    </p>
-    <button onclick="document.location='html/contact.html'">Contact</button>
-    <hr>
-
-    <a href="#top">Back to top</a>
-    <!-- Remember to make image resize with viewport-->
-    <!-- Could use a picture tag to use different images for different viewports-->
-
-    <hr>
-  
-
-  </main>
-  <footer class="pt-5 my-5 text-muted border-top">
-    Created by Karlien Brink 2026
-  </footer>
-</div>
+      </div>
+    </main>
 
 
-<!--Boostrap Java  plugins-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer class="pt-5 my-5 text-muted border-top">
+      Created by Karlien Brink 2026
+    </footer>
+    
 
-</body>
+
+    <!--Boostrap Java  plugins-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
 
 
