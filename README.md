@@ -4,7 +4,7 @@ My vritual CV has 4 pages:
 - Home
 - Resume
 - Projects
-- Contact\
+- Contact
 ## Features
 Each of these pages has a navigation bar that allows the user to navigate between them. The navigation bar collapses when the screen is too small to  contain all the content and offers  a burger menu instead.\
 All pages use bootstrap css as well as a custom style sheet written for the prohect.\
