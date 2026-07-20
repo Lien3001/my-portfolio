@@ -50,101 +50,108 @@
 
     <main>
 
-      <!--First section: Role, name, photo-->
-      <div class="container-lg" id="top">
-        <div class="row align-items-center">
-          <div class="col-md-4">
-            <img src="files/Karlien_head.jpeg" 
-            class="resizable-image"   
-            style="width: 300px;";
-            alt="A photo of a woman">
-          </div>
-
-          <div class="col-md-8">
-              <h1>Karlien Brink</h1>
-              <p>
-                <!-- Animate the marked part to rotate through roles (game dev,  software dev, artist)-->
-                <h2>I am a <mark><i><span id= "typed" class="typed-text"></span></i></mark></h2>
-              </p>
-              <script>
-                new Typed("#typed", {
-                  strings: [
-                    "Web developer",
-                    "Software developer",
-                    "Game developer",
-                    "Artist"
-                  ],
-                  typeSpeed: 60,
-                  backSpeed: 40,
-                  backDelay: 1500,
-                  loop:true
-                })
-              </script>
-          </div>
-          
-        </div>
-
-
-        <hr>
-        
-        <div class="container-md">
-          <!-- About/skills: Short overview of technologies + intro paragraph-->
-          <h2>About me</h2>
-          <p>Hi,I'm Karlien.<br> 
-            I am a final year BSc Information Technology student at North West University with hands on experience in software development, web development
-            data analytics and game development. I am familiar with Agile and DevOps practices, Git version control and building practical applications
-            from the ground up. <br>
-
-            I have strong problem solving and communication skills developed through both academic projects and part-time tutoring.<br>
-
-            I am seeking a role where I can contribute to data-driven and software solutions while continuing to grow my technical expertise.
       
-          </p>
-        </div>
-        <hr>
-        <div class="container-lg">
+      <div class="container-lg">
+        <div class="home-page-section" id="home-intro">
           <div class="row align-items-center">
-          
-            <div class="col-lg-4 text-center">
-              <!-- CV section: Link to CV page-->
-              <h3>Curriculum vitae</h3>
-              <p>Are you hiring? Find my CV here!
-              </p>
-              <button type="button"  class="btn btn-primary" onclick="document.location='html/resume.html'">Resume</button>
+            <div class="col-md-4">
+              <img src="files/Karlien_head.jpeg" 
+              class="resizable-image"   
+              style="width: 300px;";
+              alt="A photo of a woman">
             </div>
 
-
-            <div class="col-lg-4 text-center">
-
-              <!--Project section, short intro that leads to projects  page with a button-->
-              <h3>Projects</h3>
-              <p>
-                  I have worked on  a wide variety of projects, 
-                  including web applications, small games, windows accounting applications and 
-                  this very website portfolio. Feel free to check them out here.
-              </p>
-              <button type="button"  class="btn btn-primary" onclick="document.location='html/projects.html'">Projects</button>
-            </div>
-
-            <div class="col-lg-4 text-center">
-              <!-- Contact section: Link to Contact page-->
-              <h3>Contact me</h3>
-              <p>Do you need more information? Find my contact information and socials here!
-              </p>
-              <button type="button"  class="btn btn-primary" onclick="document.location='html/contact.html'">Contact</button>
+            <div class="col-md-8">
+                <h1>Karlien Brink</h1>
+                <p>
+                  <!-- Animate the marked part to rotate through roles (game dev,  software dev, artist)-->
+                  <p class="intro">I am a <mark><i><span id= "typed" class="typed-text"></span></i></mark></p>
+                </p>
+                <script>
+                  new Typed("#typed", {
+                    strings: [
+                      "Web developer",
+                      "Software developer",
+                      "Game developer",
+                      "Artist"
+                    ],
+                    typeSpeed: 60,
+                    backSpeed: 40,
+                    backDelay: 1500,
+                    loop:true
+                  })
+                </script>
             </div>
           
           </div>
+        </div>
+      </div>  
+
+
+      <hr>
+        
+        <div class="container-lg">
+          <div class="home-page-section" style="background-color: #ffeb99;">
+            <!-- About/skills: Short overview of technologies + intro paragraph-->
+            <h2 style="padding-bottom: 2%;  color: #a73169; font-weight: bold;">About me</h2>
+            <p>Hi, I'm Karlien.<br> 
+              I am a final year BSc Information Technology student at North West University with hands on experience in software development, web development
+              data analytics and game development. <br> 
+              I am familiar with Agile and DevOps practices, Git version control and building practical applications
+              from the ground up. <br>
+
+              I have strong problem solving and communication skills developed through both academic projects and part-time tutoring.<br>
+
+              I am seeking a role where I can contribute to data-driven and software solutions while continuing to grow my technical expertise.
+        
+            </p>
+          </div>
+
+        </div>
+        
+        <hr>
+
+        <div class="container-lg">
+          <div class="home-page-section" style="background-color: #a73169; color: white;">
+            <div class="row align-items-start">
+          
+              <div class="col-lg-4 text-center">
+                <!-- CV section: Link to CV page-->
+                <h3>Curriculum vitae</h3>
+                <p>Are you hiring? Find my CV here!
+                </p>
+                <button type="button"  class="btn btn-primary" onclick="document.location='html/resume.html'">Resume</button>
+              </div>
+
+
+              <div class="col-lg-4 text-center">
+
+                <!--Project section, short intro that leads to projects  page with a button-->
+                <h3>Projects</h3>
+                <p>
+                    I have worked on  a wide variety of projects, 
+                    including web applications, small games, windows accounting applications and 
+                    this very website portfolio. Feel free to check them out here.
+                </p>
+                <button type="button"  class="btn btn-primary" onclick="document.location='html/projects.html'">Projects</button>
+              </div>
+
+              <div class="col-lg-4 text-center">
+                <!-- Contact section: Link to Contact page-->
+                <h3>Contact me</h3>
+                <p>Do you need more information? Find my contact information and socials here!
+                </p>
+                <button type="button"  class="btn btn-primary" onclick="document.location='html/contact.html'">Contact</button>
+              </div>
+            
+            </div>
+          </div>
+         
         </div>
 
         <hr>
         <a href="#top">Back to top</a>
-        <!-- Remember to make image resize with viewport-->
-        <!-- Could use a picture tag to use different images for different viewports-->
 
-        <hr>
-    
-      </div>
     </main>
 
 
